@@ -1,0 +1,593 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass memoir
+\begin_preamble
+\usepackage{lipsum}
+
+\usepackage{tikz} % Required for drawing custom shapes
+\usepackage{tikzpagenodes}
+\usetikzlibrary{calc}
+\definecolor[named]{color01}{rgb}{.2,.4,.6} % Color used in the title page
+\usepackage{afterpage}
+\usepackage{xcolor}
+
+\usepackage[unicode=true,bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,breaklinks=false,pdfborder={0 0 1},backref=section,colorlinks=false]{hyperref} % PDF meta-information specification
+
+%----------------------------------------------------------------------------------------
+%	PAPER, MARGIN AND HEADER/FOOTER SIZES
+%----------------------------------------------------------------------------------------
+
+\setstocksize{12.5cm}{9.4cm} % Paper size
+\settrimmedsize{\stockheight}{\stockwidth}{*} % No trims
+\setlrmarginsandblock{18pt}{18pt}{*} % Left/right margins
+\setulmarginsandblock{30pt}{36pt}{*} % Top/bottom margins
+\setheadfoot{14pt}{12pt} % Header/footer height
+\setheaderspaces{*}{8pt}{*} % Extra header space
+
+%----------------------------------------------------------------------------------------
+%	FOOTNOTE CUSTOMIZATION
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\foottextfont}{\itshape\footnotesize} % Font settings for footnotes
+\setlength{\footmarkwidth}{-.1em} % Space between the footnote number and the text
+\setlength{\footmarksep}{.1em} % Space between multiple footnotes on the same page
+\renewcommand*{\footnoterule}{} % Remove the rule above the first footnote
+\setlength{\skip\footins}{1\onelineskip} % Space between the body text and the footnote
+
+%----------------------------------------------------------------------------------------
+%	HEADER AND FOOTER FORMATS
+%----------------------------------------------------------------------------------------
+
+\makepagestyle{mio} % Define a new custom page style
+\setlength{\headwidth}{\textwidth} % Header the same width as the text
+\makeheadrule{mio}{\textwidth}{0.1mm} % Header rule height
+\makeoddhead{mio}{\scriptsize{\theauthor\hskip.2cm\vrule\hskip.2cm\itshape{\thetitle}}}{}{} % Header specification
+\makeoddfoot{mio}{}{\scriptsize {\thepage \quad \vrule \quad \thelastpage}}{} % Footer specification
+\makeoddfoot{plain}{}{\footnotesize {\thepage \quad \vrule \quad \thelastpage}}{} % Pages of chapters
+\pagestyle{mio} % Set the page style to the custom style defined above
+
+%----------------------------------------------------------------------------------------
+%	PART FORMAT
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\partnamefont}{\centering\sffamily\itshape\Huge} % Part name font specification
+\renewcommand{\partnumfont}{\sffamily\Huge} % Part number font specification
+\renewcommand{\parttitlefont}{\centering\sffamily\scshape} % Part title font specification
+\renewcommand{\beforepartskip}{\null\vskip.618\textheight} % Whitespace above the part heading
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER FORMAT
+%----------------------------------------------------------------------------------------
+
+\makechapterstyle{Tufte}{ % Define a new chapter style
+\renewcommand{\chapterheadstart}{\null \vskip3.5\onelineskip} % Whitespace before the chapter starts
+\renewcommand{\printchaptername}{\large\itshape\chaptername} % "Chapter" text font specification
+\renewcommand{\printchapternum}{\LARGE\thechapter \\} % Chapter number font specification
+\renewcommand{\afterchapternum}{} % Space between the chapter number and text
+\renewcommand{\printchaptertitle}[1]{ % Chapter title font specification
+\raggedright
+\itshape\Huge{##1}}
+\renewcommand{\afterchaptertitle}{
+\vskip3.5\onelineskip
+}}
+\chapterstyle{Tufte} % Set the chapter style to the custom style defined above
+
+%----------------------------------------------------------------------------------------
+%	SECTION FORMAT
+%----------------------------------------------------------------------------------------
+
+\setsecheadstyle{\sethangfrom{\noindent ##1}\raggedright\sffamily\itshape\Large} % Section title font specification
+\setbeforesecskip{-.6\onelineskip} % Whitespace before the section
+\setaftersecskip{.3\onelineskip} % Whitespace after the section
+
+%----------------------------------------------------------------------------------------
+%	SUBSECTION FORMAT
+%----------------------------------------------------------------------------------------
+
+\setsubsecheadstyle{\sethangfrom{\noindent  ##1}\raggedright\sffamily\large\itshape} % Subsection title font specification
+\setbeforesubsecskip{-.5\onelineskip} % Whitespace before the subsection
+\setaftersubsecskip{.2\onelineskip} % Whitespace after the subsection
+
+%----------------------------------------------------------------------------------------
+%	SUBSUBSECTION FORMAT
+%----------------------------------------------------------------------------------------
+
+\setsubsubsecheadstyle{\sethangfrom{\noindent ##1}\raggedright\sffamily\itshape} % Subsubsection title font specification
+\setbeforesubsubsecskip{-.5\onelineskip} % Whitespace before the subsubsection
+\setaftersubsubsecskip{.1\onelineskip} % Whitespace after the subsubsection
+
+%----------------------------------------------------------------------------------------
+%	CAPTION FORMAT
+%----------------------------------------------------------------------------------------
+
+\captiontitlefont{\itshape\footnotesize} % Caption font specification
+\captionnamefont{\footnotesize} % "Caption" text font specification
+
+%----------------------------------------------------------------------------------------
+%	QUOTATION ENVIRONMENT FORMAT
+%----------------------------------------------------------------------------------------
+
+\renewenvironment{quotation}
+{\par\leftskip=1em\vskip.5\onelineskip\em}
+{\par\vskip.5\onelineskip}
+
+%----------------------------------------------------------------------------------------
+%	QUOTE ENVIRONMENT FORMAT
+%----------------------------------------------------------------------------------------
+
+\renewenvironment{quote}
+{\list{}{\em\leftmargin=1em}\item[]}{\endlist\relax}
+
+%----------------------------------------------------------------------------------------
+%	MISCELLANEOUS DOCUMENT SPECIFICATIONS
+%----------------------------------------------------------------------------------------
+
+\setlength{\parindent}{1em} % Paragraph indentation
+
+\midsloppy % Fewer overfull lines - used in the memoir class and allows a setting somewhere between \fussy and \sloppy
+
+\checkandfixthelayout % Tell memoir to implement the above
+
+
+\title{The Winter Handbook} % Book title
+\author{Alex Hagen} % Author
+\newcommand{\edition}{Edition for 2015 - 2016} % Book edition
+
+\newcommand{\includetikz}[3]{%
+    \node [rectangle,align=center,above of=title,yshift=0.3 cm] (logo) {\resizebox{#2}{#3}{\input{#1}}};
+}
+\end_preamble
+\options 9pt
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman garamondx
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty} % Suppress page numbering 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagecolor{gray}
+\backslash
+afterpage{
+\backslash
+nopagecolor}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[remember picture,overlay,node distance=0.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+node [rectangle,fill=white,minimum width=
+\backslash
+textwidth,minimum height=1 cm] (stripe) at (5.0,-6.0) {};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node [circle,fill=white,minimum size=6 cm] (circ) at (current page.center)
+ {};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node [draw=gray,line width=1.5 pt,circle,minimum size=5.8 cm] (circ2) at (current
+ page.center) {};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node [rectangle,minimum width=3 cm,minimum height=0.4pt,inner sep=0pt,draw=black]
+ (stripe) at (current page.center) {};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node [rectangle,align=center,text width=10 cm,font=
+\backslash
+rmfamily
+\backslash
+bfseries
+\backslash
+scshape
+\backslash
+Large,above of=stripe] (title) {
+\backslash
+thetitle};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node [rectangle,align=center,above of=title,yshift=0.3 cm] (logo) {
+\backslash
+resizebox{0.5 cm}{!}{
+\backslash
+input{logo_concept.tex}}};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node [rectangle,align=center,text width=4 cm,font=
+\backslash
+rmfamily
+\backslash
+scriptsize,below of=stripe] (author) {
+\backslash
+theauthor};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node [rectangle,align=center,text width=3 cm,font=
+\backslash
+rmfamily
+\backslash
+tiny,below of=author] (edition) {
+\backslash
+edition};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node [rectangle,draw=white,line width=0.5 cm,minimum height=
+\backslash
+paperheight,minimum width=
+\backslash
+paperwidth] (border) at (current page.center) {};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Food
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum{5}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Restaurant Passport
+\end_layout
+
+\begin_layout Standard
+Before the end of the winter, try to get a stamp over every logo by going
+ to every place on this page!
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[overlay,remember picture]
+\end_layout
+
+\begin_layout Plain Layout
+
+% Lines %
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+path let 
+\backslash
+p0 = (0,0), 
+\backslash
+p1 = (current page text area.south) in
+\end_layout
+
+\begin_layout Plain Layout
+
+      node [minimum width=0.4pt,minimum height=
+\backslash
+y0-
+\backslash
+y1,anchor=south,rectangle,fill=black,inner sep=0] at ({
+\backslash
+x1-
+\backslash
+textwidth*0.16666},
+\backslash
+y1) {};
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+path let 
+\backslash
+p0 = (0,0), 
+\backslash
+p1 = (current page text area.south) in
+\end_layout
+
+\begin_layout Plain Layout
+
+      node [minimum width=0.4pt,minimum height=
+\backslash
+y0-
+\backslash
+y1,anchor=south,rectangle,fill=black,inner sep=0] at ({
+\backslash
+x1+
+\backslash
+textwidth*0.16666},
+\backslash
+y1) {};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path let 
+\backslash
+p0 = (0,0), 
+\backslash
+p1 = (current page text area.south) in
+\end_layout
+
+\begin_layout Plain Layout
+
+      node [minimum height=0.4pt,minimum width=
+\backslash
+textwidth,anchor=south,rectangle,fill=black,inner sep=0] at (
+\backslash
+x1,{(
+\backslash
+y1-
+\backslash
+y0) * 0.75}) {};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path let 
+\backslash
+p0 = (0,0), 
+\backslash
+p1 = (current page text area.south) in
+\end_layout
+
+\begin_layout Plain Layout
+
+      node [minimum height=0.4pt,minimum width=
+\backslash
+textwidth,anchor=south,rectangle,fill=black,inner sep=0] at (
+\backslash
+x1,{(
+\backslash
+y1-
+\backslash
+y0) * 0.5}) {};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path let 
+\backslash
+p0 = (0,0), 
+\backslash
+p1 = (current page text area.south) in
+\end_layout
+
+\begin_layout Plain Layout
+
+      node [minimum height=0.4pt,minimum width=
+\backslash
+textwidth,anchor=south,rectangle,fill=black,inner sep=0] at (
+\backslash
+x1,{(
+\backslash
+y1-
+\backslash
+y0) * 0.25}) {};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Logos %
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path let 
+\backslash
+p0 = (0,0), 
+\backslash
+p1 = (current page text area.south) in
+\end_layout
+
+\begin_layout Plain Layout
+
+      node [minimum height={(
+\backslash
+y1-
+\backslash
+y0) * 0.25},minimum width=0.33
+\backslash
+textwidth,anchor=center,rectangle,draw=black,inner sep=0] at ({
+\backslash
+x1-
+\backslash
+textwidth*0.33333},{(
+\backslash
+y1-
+\backslash
+y0) * 0.125}) { hi };
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
