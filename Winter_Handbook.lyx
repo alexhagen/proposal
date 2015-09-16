@@ -562,7 +562,7 @@ y1-
 \backslash
 y0) * 0.25},minimum width=0.33
 \backslash
-textwidth,anchor=center,rectangle,draw=black,inner sep=0] at ({
+textwidth,anchor=center,rectangle,inner sep=0] at ({
 \backslash
 x1-
 \backslash
@@ -570,7 +570,98 @@ textwidth*0.33333},{(
 \backslash
 y1-
 \backslash
-y0) * 0.125}) { hi };
+y0) * 0.125}) 
+\end_layout
+
+\begin_layout Plain Layout
+
+        {
+\backslash
+resizebox{0.30
+\backslash
+textwidth}{!}{
+\backslash
+input{digbys.tex}}};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path let 
+\backslash
+p0 = (0,0), 
+\backslash
+p1 = (current page text area.south) in
+\end_layout
+
+\begin_layout Plain Layout
+
+      node [minimum height={(
+\backslash
+y1-
+\backslash
+y0) * 0.25},minimum width=0.33
+\backslash
+textwidth,anchor=center,rectangle,inner sep=0] at ({
+\backslash
+x1},{(
+\backslash
+y1-
+\backslash
+y0) * 0.125}) 
+\end_layout
+
+\begin_layout Plain Layout
+
+        {
+\backslash
+resizebox{0.30
+\backslash
+textwidth}{!}{
+\backslash
+input{heirloom.tex}}};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path let 
+\backslash
+p0 = (0,0), 
+\backslash
+p1 = (current page text area.south) in
+\end_layout
+
+\begin_layout Plain Layout
+
+      node [minimum height={(
+\backslash
+y1-
+\backslash
+y0) * 0.25},minimum width=0.33
+\backslash
+textwidth,anchor=center,rectangle,inner sep=0] at ({
+\backslash
+x1+
+\backslash
+textwidth*0.33333},{(
+\backslash
+y1-
+\backslash
+y0) * 0.125}) 
+\end_layout
+
+\begin_layout Plain Layout
+
+        {
+\backslash
+resizebox{0.30
+\backslash
+textwidth}{!}{
+\backslash
+input{restauration.tex}}};
 \end_layout
 
 \begin_layout Plain Layout
