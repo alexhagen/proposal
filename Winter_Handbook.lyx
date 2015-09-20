@@ -138,6 +138,9 @@
 \newcommand{\includetikz}[3]{%
     \node [rectangle,align=center,above of=title,yshift=0.3 cm] (logo) {\resizebox{#2}{#3}{\input{#1}}};
 }
+
+\usepackage{tabto}
+\def\quoteattr#1#2{\setbox0=\hbox{#2}#1\tabto{\dimexpr\linewidth-\wd0}\box0}
 \end_preamble
 \options 9pt
 \use_default_options true
@@ -359,7 +362,7 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Chapter
-Food
+Introduction and Motivation
 \end_layout
 
 \begin_layout Standard
@@ -378,8 +381,155 @@ lipsum{5}
 
 \end_layout
 
+\begin_layout Chapter
+Details
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[3]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Holidays and Single Events
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[3]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Monthly
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[3]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Weekly
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+A weekly walk outside
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+quoteattr{I find this little...
+ ...visit out in the open so beneficial.
+ Even if it is but for a minute or two, it is unbelievable how that short
+ time helps to...
+ ...bring feelings into equilibrium...}{
+\backslash
+textsc{Roald Amundsen on expedition to the South Pole}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\start_of_appendix
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+chaptername}{Appendix}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Reference and Ideas
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1]
+\end_layout
+
 \end_inset
 
 
