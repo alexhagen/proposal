@@ -139,6 +139,9 @@
     \node [rectangle,align=center,above of=title,yshift=0.3 cm] (logo) {\resizebox{#2}{#3}{\input{#1}}};
 }
 
+\usepackage{epigraph}
+\setlength{\epigraphwidth}{0.8\textwidth}
+\renewcommand{\epigraphflush}{center}
 \usepackage{tabto}
 \def\quoteattr#1#2{\setbox0=\hbox{#2}#1\tabto{\dimexpr\linewidth-\wd0}\box0}
 \end_preamble
@@ -413,7 +416,7 @@ status open
 
 
 \backslash
-lipsum[3]
+lipsum[1]
 \end_layout
 
 \end_inset
@@ -421,28 +424,8 @@ lipsum[3]
 
 \end_layout
 
-\begin_layout Chapter
-Monthly
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lipsum[3]
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Chapter
-Weekly
+\begin_layout Section
+Thanksgiving
 \end_layout
 
 \begin_layout Standard
@@ -462,6 +445,159 @@ lipsum[1]
 \end_layout
 
 \begin_layout Section
+Christmas
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+New Year's Eve
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+St.
+ Patrick's Day
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Monthly
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Remember Summer Date Nights
+\end_layout
+
+\begin_layout Subsection
+Carribean Night 
+\end_layout
+
+\begin_layout Subsection
+Midwestern Summer Night 
+\end_layout
+
+\begin_layout Subsection
+Spring Fling Night 
+\end_layout
+
+\begin_layout Subsection
+Drive-in Night
+\end_layout
+
+\begin_layout Section
+Embrace Winter Date Nights
+\end_layout
+
+\begin_layout Subsection
+Ice Skating Night 
+\end_layout
+
+\begin_layout Subsection
+Snowball Ambush Night 
+\end_layout
+
+\begin_layout Subsection
+Sled Slayter Hill Night 
+\end_layout
+
+\begin_layout Subsection
+Coffee or Fireplace Date Night
+\end_layout
+
+\begin_layout Section
+Embrace Winter Time Nights
+\end_layout
+
+\begin_layout Subsection
+Plan Summer Hike Night 
+\end_layout
+
+\begin_layout Subsection
+Plan Summer Vacation Night 
+\end_layout
+
+\begin_layout Subsection
+Plan John Muir Trail Night 
+\end_layout
+
+\begin_layout Subsection
+Make Crafts and Decorations Night
+\end_layout
+
+\begin_layout Chapter
+Weekly
+\end_layout
+
+\begin_layout Standard
+The winter is long.
+ Even if you celebrate every holiday to the 9's and have a wonderful time
+ every month, that still only accounts for 15 events out of 90-120 days.
+ To help provide small bright points, I think it would be good to have weekly
+ traditions to look forward to, to help stave off the blues and cabin fever.
+\end_layout
+
+\begin_layout Section
 A weekly walk outside
 \end_layout
 
@@ -475,7 +611,7 @@ status open
 
 
 \backslash
-quoteattr{I find this little...
+epigraph{I find this little...
  ...visit out in the open so beneficial.
  Even if it is but for a minute or two, it is unbelievable how that short
  time helps to...
@@ -487,6 +623,93 @@ textsc{Roald Amundsen on expedition to the South Pole}}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Who better to give advice on staving off cabin fever and seasonal depression
+ than the guy that finally made it to the south pole (unlike the slackers
+ before him who went crazy or perished on the way).
+ We've talked about going on walks outside in the snow a lot in the past
+ and never have really stuck to it.
+ This year, we should! If we bundle up appropriately, keep our walks short,
+ and account for enough time to warm up/cuddle/shower afterwards, I think
+ the fresh air and beautiful snow (or ugly rainy bullshit Lafayette winter
+ weather) would be beneficial.
+ Here's a list of places we could go:
+\end_layout
+
+\begin_layout Description
+Downtown Obviously we could just walk out our door and get up to 2 miles
+ in without really having to leave the cool area of downtown.
+\end_layout
+
+\begin_layout Description
+Wabash
+\begin_inset space ~
+\end_inset
+
+Heritage
+\begin_inset space ~
+\end_inset
+
+Trail Right out our door, or at Fort Ouiatenon, or up in Battle Ground,
+ or at Davis Ferry.
+ The options are endless! 1-13 miles.
+\end_layout
+
+\begin_layout Description
+Clegg
+\begin_inset space ~
+\end_inset
+
+Gardens I've always wanted to see the Wildcat in winter, and especially
+ if it's recently snowed, this hike could be really beautiful.
+ 2ish miles.
+\end_layout
+
+\begin_layout Description
+Prophetstown
+\begin_inset space ~
+\end_inset
+
+Trail
+\begin_inset space ~
+\end_inset
+
+1 The prarie will be covered with snow! We could even try to cross country
+ ski up there...maybe.
+ 2-8 miles.
+\end_layout
+
+\begin_layout Description
+Plymouth
+\begin_inset space ~
+\end_inset
+
+Arch Someplace we've never been in summer might be really fun to do in the
+ winter, and then we can revisit to see how it changed! 0-1 miles.
+\end_layout
+
+\begin_layout Section
+A weekly bath/hot tub soak
+\end_layout
+
+\begin_layout Section
+Aromatherapy
+\end_layout
+
+\begin_layout Section
+Chocolate!
+\end_layout
+
+\begin_layout Section
+Eat Comfort Food
+\end_layout
+
+\begin_layout Standard
+This one's simple! Cook, or let me cook for you, some comfort food.
+ These include hearty pastas, soups, roasted things.
+ Here's a list of ideas (most of which I picked because I want to try them!)
 \end_layout
 
 \begin_layout Standard
@@ -825,6 +1048,45 @@ end{tikzpicture}
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Winter Walk Companion
+\end_layout
+
+\begin_layout Standard
+In the white space below, trace or freehand a view from one of your snow
+ hikes, and color it in with crayons.
+ This is best done with hot chocolate/tea!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Snowball Ambush Paraphrenalia
+\end_layout
+
+\begin_layout Standard
+Everybody needs to have a name, number, and rank when going on military
+ expeditions.
+ Below are those ranks, and even some medals that can be given out for uncommon
+ valor!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
