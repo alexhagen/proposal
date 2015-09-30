@@ -591,8 +591,9 @@ Weekly
 
 \begin_layout Standard
 The winter is long.
- Even if you celebrate every holiday to the 9's and have a wonderful time
- every month, that still only accounts for 15 events out of 90-120 days.
+ Even if you celebrate every holiday to the nines and have a wonderful time
+ once every month, that still only accounts for 15 events out of 90-120
+ days.
  To help provide small bright points, I think it would be good to have weekly
  traditions to look forward to, to help stave off the blues and cabin fever.
 \end_layout
@@ -611,11 +612,13 @@ status open
 
 
 \backslash
-epigraph{I find this little...
+epigraph{
+\backslash
+textit{I find this little...
  ...visit out in the open so beneficial.
  Even if it is but for a minute or two, it is unbelievable how that short
  time helps to...
- ...bring feelings into equilibrium...}{
+ ...bring feelings into equilibrium...}}{
 \backslash
 textsc{Roald Amundsen on expedition to the South Pole}}
 \end_layout
