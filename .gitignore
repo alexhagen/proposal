@@ -1,0 +1,2 @@
+# ignore lyx temporary files
+*.lyx~

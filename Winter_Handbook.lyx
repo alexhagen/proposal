@@ -365,7 +365,7 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Chapter
-Introduction and Motivation
+An Introduction
 \end_layout
 
 \begin_layout Standard
@@ -385,27 +385,7 @@ lipsum{5}
 \end_layout
 
 \begin_layout Chapter
-Details
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lipsum[3]
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Chapter
-Holidays and Single Events
+Once in a Blue Moon
 \end_layout
 
 \begin_layout Standard
@@ -526,7 +506,7 @@ lipsum[1]
 \end_layout
 
 \begin_layout Section
-Remember Summer Date Nights
+In Memoriam
 \end_layout
 
 \begin_layout Subsection
@@ -566,7 +546,7 @@ Coffee or Fireplace Date Night
 \end_layout
 
 \begin_layout Section
-Embrace Winter Time Nights
+Cabin Fever
 \end_layout
 
 \begin_layout Subsection
@@ -599,7 +579,7 @@ The winter is long.
 \end_layout
 
 \begin_layout Section
-A weekly walk outside
+Go!
 \end_layout
 
 \begin_layout Standard
@@ -714,25 +694,29 @@ Shoeing Similar to puddle stomping, but more serious! We could find any
 \end_layout
 
 \begin_layout Section
-A weekly bath/hot tub soak
+Relax!
 \end_layout
 
 \begin_layout Section
-Aromatherapy
+Smell!
 \end_layout
 
 \begin_layout Section
-Chocolate!
-\end_layout
-
-\begin_layout Section
-Eat Comfort Food
+Eat!
 \end_layout
 
 \begin_layout Standard
 This one's simple! Cook, or let me cook for you, some comfort food.
  These include hearty pastas, soups, roasted things.
  Here's a list of ideas (most of which I picked because I want to try them!)
+\end_layout
+
+\begin_layout Section
+Eat!, the sequel
+\end_layout
+
+\begin_layout Section
+Eat! III
 \end_layout
 
 \begin_layout Standard
