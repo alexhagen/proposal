@@ -147,6 +147,8 @@
 
 
 \usepackage{qrcode}
+\usepackage[nonumber]{cuisine}
+\RecipeWidths{\textwidth}{1.5cm}{0.25cm}{1.5cm}{.75cm}{.75cm}
 \end_preamble
 \options 9pt
 \use_default_options true
@@ -400,70 +402,162 @@ Monthly
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lipsum[1]
+Breaking the winter down by month, it doesn't seem too long.
+ Only November, December, January, and February (and basically March).
+ It's just making it through each month that makes it really difficult.
+ But, one of the easiest ways to make time seem like it's going faster is
+ to have milestones.
+ Not only the night of the milestone, but also the planning of the milestone,
+ make the time in between go much faster.
+ So, we should plan to have things to do every month, specifically designed
+ to make us feel more invigorated.
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+I've put some ideas down, and they could be done in any order.
+ But they fall under three categories: In Memoriam (of summer), Embrace
+ (winter), and Cabin Fever (fighting) nights.
 \end_layout
 
 \begin_layout Section
 In Memoriam
 \end_layout
 
-\begin_layout Subsection
-Carribean Night 
+\begin_layout Standard
+We both love summer so much, it's only appropriate that we mourn its passing
+ by trying to recreate it as much as possible.
 \end_layout
 
 \begin_layout Subsection
-Midwestern Summer Night 
+Carribean Night
+\end_layout
+
+\begin_layout Standard
+Steel drum music, fruity drinks, and the heater on high will make us feel
+ like we're on a carribean island.
+\begin_inset Newpage clearpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-Spring Fling Night 
+Mexican Night
+\end_layout
+
+\begin_layout Standard
+We love tacos, and we certainly like tequila.
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Spring Fling Night
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 Drive-in Night
 \end_layout
 
+\begin_layout Standard
+All we need are 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Embrace Winter Date Nights
+Embrace
 \end_layout
 
 \begin_layout Standard
 Sometimes you can't keep fighting off the cold and hoping you were somewhere
  else, so you have to really embrace winter.
- There are a coupling things that you can only do in winter, and we should
- try them.
+ There are plenty of things you can't do without the winter weather, and
+ we should do them!
 \end_layout
 
 \begin_layout Subsection
-Ice Skating Night 
+Ice Skating Night
+\end_layout
+
+\begin_layout Standard
+We live hardly half a mile from an ice skating rink, we really have to go
+ ice skating! I know you're afraid you might hurt your ankles, but if you
+ want to, you can hold close to me the whole night!
 \end_layout
 
 \begin_layout Subsection
-Snowball Ambush Night 
+Snowball Ambush Night
+\end_layout
+
+\begin_layout Standard
+Just like when we'd go on campus and streak or something, mischeif always
+ gets your blood turning.
+ I think we should bundle up one night and appear at someone's house (Tony
+ and Bri, or Adam and Mary) and ambush them with snowballs.
+ You know we'd destroy them! We'd be actual partners in crime then!
 \end_layout
 
 \begin_layout Subsection
-Sled Slayter Hill Night 
+Sled Slayter Hill Night
+\end_layout
+
+\begin_layout Standard
+I loved sledding with you, and if the weather cooperates over winter break,
+ we should go sledding on Slayter Hill when the students are gone.
+ Don't let me beat you at sledding again!
 \end_layout
 
 \begin_layout Subsection
 Coffee or Fireplace Date Night
 \end_layout
 
+\begin_layout Standard
+Finally, we have to try the little coffee places around us.
+ That Fuel place down main street seems like it'd be fun.
+ Ideally, we could find some place that has a fireplace and sit beside it,
+ as close as we can.
+\end_layout
+
 \begin_layout Section
 Cabin Fever
+\end_layout
+
+\begin_layout Standard
+When you reach the end of your rope as far as winter weather is concerned,
+ you have to just bundle up, make warm drinks, and do something wonderful
+ inside.
+ We're both really imaginative, and so I think one of the best ways to pass
+ the time would be to plan things that we'll do next summer.
+\end_layout
+
+\begin_layout Subsection
+Make Crafts and Decorations Night
+\end_layout
+
+\begin_layout Standard
+Especially since Quals have made the past couple years so difficult, I want
+ to go all out on holiday decorations.
+ What better way to get in the spirit than to drink tea or cocoa and make
+ homemade decorations (and other crafts).
+\begin_inset Newpage clearpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -471,19 +565,36 @@ Plan Summer Hike Night
 \end_layout
 
 \begin_layout Standard
-There
+I think we're both more happy when we get outside and hike together.
+ But we've definitely explored the Lafayette area about as much as we can,
+ so we need to broaden our horizon a little bit.
+\begin_inset Newpage clearpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 Plan Summer Vacation Night
 \end_layout
 
+\begin_layout Standard
+We've been talking about saving up vacation time to take a good trip this
+ summer, and the time would be ripe to plan for this vacation during the
+ winter.
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Plan John Muir Trail Night
 \end_layout
 
-\begin_layout Subsection
-Make Crafts and Decorations Night
+\begin_layout Standard
+Even longer ranging in time than the summer vacation is a plan to do one
+ of the through trails by sections, maybe the John Muir Trail.
 \end_layout
 
 \begin_layout Chapter
@@ -622,6 +733,89 @@ Relax!
 Smell!
 \end_layout
 
+\begin_layout Standard
+Aromatherapy is incredible for beating the winter blues.
+ Below are three recipes that we can throw together and see if it helps
+ our mood at all.
+ And the last one doubles as a massage oil, so we can definitely use it
+ for its intended purpose.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{recipe}{Yorkshire Pudding}{4 portions}{1
+\backslash
+fr12 hours}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ingredient[
+\backslash
+fr12]{pt}{milk}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ingredient[2]{oz}{butter}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ingredient[5]{oz}{self-raising flour} Heat the milk and butter until nearly
+ boiling.
+ Add flour and allow to seeth over.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ingredient[3]{}{eggs}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ingredient{to taste}{salt and pepper} Add the remaining eggs and whisk again.
+ Cook at 220
+\backslash
+0C for about 1 hour.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{recipe}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+{recpie 2}
+\end_layout
+
+\begin_layout Standard
+{recipe 3}
+\end_layout
+
 \begin_layout Section
 Eat!
 \end_layout
@@ -640,7 +834,369 @@ status open
 
 
 \backslash
-qrcode{dummy code}
+qrcode[nolink,padding,height=1cm]{https://www.evernote.com/shard/s7/nl/758873/9da7
+5627-de3b-4c56-b9ae-2c44f0ddc182?title=One%20Pot%20Garlic%20Parmesan%20Pasta}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{0.7
+\backslash
+textwidth}{
+\end_layout
+
+\end_inset
+
+One Pot Garlic Parmesan Pasta
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+qrcode[nolink,padding,height=1cm]{https://www.evernote.com/shard/s7/nl/758873/cbd6
+a3c2-7761-49d5-b86c-959ca4a03412?title=Butternut%20Squash%20and%20Gorgonzola%20R
+igatoni%20Pasta%20Pie%20with%20Fried%20Sage%20-%20Half%20Baked%20Harvest}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{0.7
+\backslash
+textwidth}{
+\end_layout
+
+\end_inset
+
+Butternut Squash and Gorgonzola Rigatoni Pasta Pie with Fried Sage
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+qrcode[nolink,padding,height=1cm]{https://www.evernote.com/shard/s7/nl/758873/3be4
+ba9d-47ec-4e5f-92d3-c33c06e03199?title=Vegetarian%20Stuffed%20Shells%20Recipe}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{0.7
+\backslash
+textwidth}{
+\end_layout
+
+\end_inset
+
+Vegetarian Stuffed Shells Recipe
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+qrcode[nolink,padding,height=1cm]{https://www.evernote.com/shard/s7/nl/758873/fd3e
+1b20-0b18-417c-8780-3e3ab32ef081?title=Rotini%20with%20Butternut-Sage%20Sauce}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{0.7
+\backslash
+textwidth}{
+\end_layout
+
+\end_inset
+
+Rotini with Butternut-Sage Sauce
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+qrcode[nolink,padding,height=1cm]{https://www.evernote.com/shard/s7/nl/758873/e40c
+6b21-8100-4148-a706-19cb88cf072f?title=Easy%20One-Skillet%20Lasagna}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{0.7
+\backslash
+textwidth}{
+\end_layout
+
+\end_inset
+
+Easy One-Skillet Lasagna
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+qrcode[nolink,padding,height=1cm]{https://www.evernote.com/shard/s7/nl/758873/4538
+0688-8f4d-42f3-8282-c1d556bdb985?title=Chili%20Corn%20Chowder}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{0.7
+\backslash
+textwidth}{
+\end_layout
+
+\end_inset
+
+Chili Corn Chowder
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+qrcode[nolink,padding,height=1cm]{https://www.evernote.com/shard/s7/nl/758873/6a2c
+d78d-64d4-4aaf-9dcd-6743defc15f5?title=Broccoli%20Cheddar%20Baked%20Potato%20Sou
+p}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{0.7
+\backslash
+textwidth}{
+\end_layout
+
+\end_inset
+
+Broccoli Cheddar Baked Potato Soup
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+qrcode[nolink,padding,height=1cm]{https://www.evernote.com/shard/s7/nl/758873/95ac
+c29b-320b-447c-8442-6c556a724b21?title=Curried%20Pumpkin%20and%20Apple%20Soup}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{0.7
+\backslash
+textwidth}{
+\end_layout
+
+\end_inset
+
+Curried Pumpkin and Apple Soup
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
 \end_layout
 
 \end_inset
@@ -652,8 +1208,73 @@ qrcode{dummy code}
 Eat!, the sequel
 \end_layout
 
+\begin_layout Standard
+This one's also really simple! Turn to Appendix 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "sec:Restaurant-Passport"
+
+\end_inset
+
+ and follow the directions to finish the game of bingo!
+\end_layout
+
 \begin_layout Section
 Eat! III
+\end_layout
+
+\begin_layout Standard
+I'm misleading you, all of the Eat's are simple! Chocolate is supposedly
+ really good for you to feel better in the winter, so we're going on a strict
+ regimen!
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+{Picture}
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{0.5
+\backslash
+textwidth}{
+\end_layout
+
+\end_inset
+
+Take 2 pieces (1 oz.), by mouth, of chocolate once per day to feel startling
+ positive effects.
+ Recommended to take 
+after returning home from work, and at least half hour before consuming
+ any dairy products.
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -704,6 +1325,13 @@ lipsum[1]
 
 \begin_layout Section
 Restaurant Passport
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Restaurant-Passport"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
