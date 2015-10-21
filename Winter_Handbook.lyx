@@ -8,6 +8,7 @@
 
 \usepackage{tikz} % Required for drawing custom shapes
 \usepackage{tikzpagenodes}
+\usepackage{pgf}
 \usetikzlibrary{calc}
 \definecolor[named]{color01}{rgb}{.2,.4,.6} % Color used in the title page
 \usepackage{afterpage}
@@ -164,7 +165,7 @@
 \renewcommand{\textfraction}{.01}
 
 \makeatletter
-\newcommand*{\twopagepicture}[4]{%
+\newcommand*{\twopagepicture}[5]{%
     \checkoddpage
     \ifoddpage
         \expandafter\@firstofone
@@ -194,7 +195,14 @@
         \else
             \let\mywidth\linewidth
         \fi
-        \adjustbox{trim=0 0 {.5\width} 0,clip}{\includegraphics[width=2\mywidth]{#3}}}%
+        \adjustbox{trim=0 0 {.5\width} 0,clip}{
+\if #5n
+\includegraphics[width=2\mywidth]{#3}
+\fi
+\if #5g
+\resizebox{2\mywidth}{!}{\input{#3}}
+\fi
+}}%
         \if #1b\else
             \caption{#4}%
         \fi
@@ -217,7 +225,14 @@
         \else
             \let\mywidth\linewidth
         \fi
-        \adjustbox{trim={.5\width} 0 0 0,clip}{\includegraphics[width=2\mywidth]{#3}}}%
+        \adjustbox{trim={.5\width} 0 0 0,clip}{
+\if #5n
+\includegraphics[width=2\mywidth]{#3}
+\fi
+\if #5g
+\resizebox{2\mywidth}{!}{\input{#3}}
+\fi
+}}%
         \if #2p%
             \if #1b%
                 \vspace*{-\dimexpr\paperheight-\textheight-1in-\voffset-\topmargin-\headheight-\headsep\relax}%
@@ -1050,7 +1065,7 @@ status open
 
 
 \backslash
-twopagepicture{b}{p}{jmt_elevation.jpg}{John Muir Trail Elevation}
+twopagepicture{b}{p}{john_muir_trail_plan.pgf}{John Muir Trail Elevation}{g}
 \end_layout
 
 \end_inset
@@ -1131,7 +1146,7 @@ status open
 
 
 \backslash
-twopagepicture{t}{p}{jmt.jpg}{John Muir Trail Magazine Inset}
+twopagepicture{t}{p}{jmt.jpg}{John Muir Trail Magazine Inset}{n}
 \end_layout
 
 \end_inset
