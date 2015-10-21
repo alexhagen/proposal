@@ -8,9 +8,10 @@ from pyg import twod as ahp
 # make a curve out of these
 jmt = ahm.curve(mileage,elevation,name="John Muir Trail Elevation");
 
-# Plot this elevation to five different lines
+# Plot this elevation to one line
+jmt_plot = jmt.plot();
 
 # add in points of interest
 
 # export
-plot.export('john_muir_trail_plan',formats=['png','pgf'],sizes=['cs'],customsize=[6.5,7.5]);
+plot.export('john_muir_trail_plan',formats=['png','pgf'],sizes=['cs'],customsize=[7.4,4]);
