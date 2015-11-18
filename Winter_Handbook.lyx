@@ -63,15 +63,17 @@
 %----------------------------------------------------------------------------------------
 
 \makechapterstyle{Tufte}{ % Define a new chapter style
-\renewcommand{\chapterheadstart}{\null \vskip3.5\onelineskip} % Whitespace before the chapter starts
-\renewcommand{\printchaptername}{\large\itshape\chaptername} % "Chapter" text font specification
-\renewcommand{\printchapternum}{\LARGE\thechapter \\} % Chapter number font specification
+\renewcommand{\chapterheadstart}{\null \vskip1\onelineskip} % Whitespace before the chapter starts
+\renewcommand{\printchaptername}{\large\sffamily\color{link}\chaptername} % "Chapter" text font specification
+\renewcommand{\printchapternum}{\large\sffamily\color{link}\thechapter\\} % Chapter number font specification
 \renewcommand{\afterchapternum}{} % Space between the chapter number and text
 \renewcommand{\printchaptertitle}[1]{ % Chapter title font specification
 \raggedright
-\itshape\Huge{##1}}
+\color{blue}\sffamily\Huge{##1}}
 \renewcommand{\afterchaptertitle}{
-\vskip3.5\onelineskip
+\vskip1pt
+\color{accent}\rule{0.6\textwidth}{0.5pt}
+\vskip5.5\onelineskip
 }}
 \chapterstyle{Tufte} % Set the chapter style to the custom style defined above
 
@@ -79,17 +81,19 @@
 %	SECTION FORMAT
 %----------------------------------------------------------------------------------------
 
-\setsecheadstyle{\sethangfrom{\noindent ##1}\raggedright\sffamily\itshape\Large} % Section title font specification
-\setbeforesecskip{-.6\onelineskip} % Whitespace before the section
-\setaftersecskip{.3\onelineskip} % Whitespace after the section
+\setsecnumformat{}
+\def\sectionmark#1{\markboth{#1}{#1}}
+\setsecheadstyle{\raggedright\sffamily\LARGE} % Section title font specification
+\setbeforesecskip{1.5\onelineskip} % Whitespace before the section
+\setaftersecskip{1\onelineskip} % Whitespace after the section
 
 %----------------------------------------------------------------------------------------
 %	SUBSECTION FORMAT
 %----------------------------------------------------------------------------------------
 
-\setsubsecheadstyle{\sethangfrom{\noindent  ##1}\raggedright\sffamily\large\itshape} % Subsection title font specification
-\setbeforesubsecskip{-.5\onelineskip} % Whitespace before the subsection
-\setaftersubsecskip{.2\onelineskip} % Whitespace after the subsection
+\setsubsecheadstyle{\raggedright\sffamily\color{link}\large} % Subsection title font specification
+\setbeforesubsecskip{1.0\onelineskip} % Whitespace before the subsection
+\setaftersubsecskip{0.5\onelineskip} % Whitespace after the subsection
 
 %----------------------------------------------------------------------------------------
 %	SUBSUBSECTION FORMAT
@@ -242,20 +246,33 @@
     }}%
 }
 \makeatother
+\usepackage{xcolor}
+\definecolor{newblack}{HTML}{142735}
+\definecolor{blue}{HTML}{285668}
+\definecolor{accent}{HTML}{FC8D82}
+\definecolor{link}{HTML}{919789}
+
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+
+\AtBeginDocument{\globalcolor{blue}}
 \end_preamble
-\options 9pt,twoside
-\use_default_options true
+\options 9pt,twoside,openleft
+\use_default_options false
 \maintain_unincluded_children false
 \language english
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman garamondx
-\font_sans default
+\font_roman Open Sans
+\font_sans Baron Neue
 \font_typewriter default
 \font_math auto
 \font_default_family default
-\use_non_tex_fonts false
+\use_non_tex_fonts true
 \font_sc false
 \font_osf false
 \font_sf_scale 100
@@ -325,7 +342,7 @@ thispagestyle{empty} % Suppress page numbering
 
 
 \backslash
-pagecolor{gray}
+pagecolor{link}
 \backslash
 afterpage{
 \backslash
@@ -360,7 +377,7 @@ node [circle,fill=white,minimum size=6 cm] (circ) at (current page.center)
 
 
 \backslash
-node [draw=gray,line width=1.5 pt,circle,minimum size=5.8 cm] (circ2) at (current
+node [draw=link,line width=1.5 pt,circle,minimum size=5.8 cm] (circ2) at (current
  page.center) {};
 \end_layout
 
@@ -368,7 +385,7 @@ node [draw=gray,line width=1.5 pt,circle,minimum size=5.8 cm] (circ2) at (curren
 
 
 \backslash
-node [rectangle,minimum width=3 cm,minimum height=0.4pt,inner sep=0pt,draw=black]
+node [rectangle,minimum width=3 cm,minimum height=0.4pt,inner sep=0pt,draw=blue]
  (stripe) at (current page.center) {};
 \end_layout
 
@@ -378,7 +395,7 @@ node [rectangle,minimum width=3 cm,minimum height=0.4pt,inner sep=0pt,draw=black
 \backslash
 node [rectangle,align=center,text width=10 cm,font=
 \backslash
-rmfamily
+sffamily
 \backslash
 bfseries
 \backslash
@@ -406,7 +423,7 @@ input{logo_concept.tex}}};
 \backslash
 node [rectangle,align=center,text width=4 cm,font=
 \backslash
-rmfamily
+sffamily
 \backslash
 scriptsize,below of=stripe] (author) {
 \backslash
@@ -419,7 +436,7 @@ theauthor};
 \backslash
 node [rectangle,align=center,text width=3 cm,font=
 \backslash
-rmfamily
+sffamily
 \backslash
 tiny,below of=author] (edition) {
 \backslash
@@ -479,15 +496,16 @@ Winter is hard.
 \end_layout
 
 \begin_layout Standard
-Doubly, though, winter makes it hard to do the things that make you happy.
+Doubly, though, winter makes it hard to do the things that make us happy.
  This, in turn, only makes us sadder.
 \end_layout
 
 \begin_layout Standard
 Sometimes those things that make us happy are the simplest, and so I've
  written a handbook as motivation, and as a plan, to help us kick this winter's
- ass! Think of it like when we would make chicken salad sandwiches for lunch
- for the whole week, only on a grander scale.
+ ass! It's like setting ourselves up for success! Think of it like when
+ we would make chicken salad sandwiches for lunch for the whole week, only
+ on a grander scale.
 \end_layout
 
 \begin_layout Chapter
@@ -521,15 +539,133 @@ We both love summer so much, it's only appropriate that we mourn its passing
  by trying to recreate it as much as possible.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
-Carribean Night
+Caribbean Night
 \end_layout
 
 \begin_layout Standard
-Steel drum music, fruity drinks (preferably with rum), and the heater on
- high will make us feel like we're on a carribean island.
- I suggest we look the part and wear swim trunks, and maybe even put Newton
- in a hula skirt!
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+The steel drum music plays,
+\begin_inset Newline newline
+\end_inset
+
+at the place where the ocean lays
+\begin_inset Newline newline
+\end_inset
+
+up to the rocks and sand
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+We can relax with the temperature hot,
+\begin_inset Newline newline
+\end_inset
+
+and our fruit juice mixed with a shot,
+\begin_inset Newline newline
+\end_inset
+
+of rum or the strongest thing at hand
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+It would be easy to look out of place,
+\begin_inset Newline newline
+\end_inset
+
+Especially because we're not of the caribbean race,
+\begin_inset Newline newline
+\end_inset
+
+unless we wore a hawaiian shirt
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+It's understandable if you'd like to imagine tropical ports
+\begin_inset Newline newline
+\end_inset
+
+Instead in your tropical shorts,
+\begin_inset Newline newline
+\end_inset
+
+But we'll definitely have to give Newton a hula skirt!
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align right
+
+\shape italic
+\size footnotesize
+⇝ Alex Hagen
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename caribbean_tiles.svg
+	height 100theight%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
