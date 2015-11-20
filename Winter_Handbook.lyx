@@ -259,9 +259,45 @@
 \makeatother
 
 \AtBeginDocument{\globalcolor{blue}}
+
+\usepackage[scale=1,angle=0,opacity=0.2,color=white]{background}
+\usetikzlibrary{calc}
+\usepackage{xifthen}
+\usepackage{lipsum}
+
+\newcommand{\multipagetikz}[3]% start page, num pages, picture code
+{   \pgfmathtruncatemacro{\currentpage}{\value{page}}
+    \pgfmathtruncatemacro{\maxpage}{#1+#2}
+    \pgfmathtruncatemacro{\minpage}{#1-1}
+    \pgfmathsetmacro{\additionalxshift}{-(\value{page}-#1)*1.25\paperwidth}
+    \ifthenelse{\currentpage < \maxpage \AND \currentpage > \minpage}
+    {
+        \begin{tikzpicture}[overlay,remember picture,y=-0.80pt, x=0.80pt,
+                    shift={($(current page.north west)+(\additionalxshift,0)$)}]
+            #3
+        \end{tikzpicture}
+    }{}
+}
+
+\newcommand{\multipagetikzbackground}[2]% num pages, picture code
+{
+  \pgfmathtruncatemacro{\startpage}{\value{page}}
+  \backgroundsetup{ 
+    contents =  {
+      \multipagetikz{\startpage}{#1}{#2}
+    }
+  }
+}
+
+\backgroundsetup{
+  contents = {}
+}
 \end_preamble
 \options 9pt,twoside,openleft
 \use_default_options false
+\begin_modules
+shapepar
+\end_modules
 \maintain_unincluded_children false
 \language english
 \language_package default
@@ -725,14 +761,311 @@ Sometimes you can't keep fighting off the cold and hoping you were somewhere
  we should do them!
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Sled Slayter Hill Night
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+multipagetikzbackground{2}{
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+input{sledding_ice_skating.tex}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout shapepar
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+1in
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{1.55}
+\end_layout
+
+\begin_layout Plain Layout
+
+{0}b{0}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{0}t{0}{1.35}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{0.467}t{0}{1.149}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{0.922}t{0}{1.117}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{1.523}t{0}{1.192}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{2.185}t{0}{1.386}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{2.367}t{0}{1.397}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{3.095}t{0}{1.014}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{3.095}t{0}{1.014}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{3.095}e{1.014}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+One of my favorite memories is when you got a snow day at Area IV and we
+ went sledding at the Bishop's House.
+ I think it's high time that we go again! We can either try out Slayter
+ Hill, if the weather cooperates over winter break, or go to the Bishop's
+ House again.
+ All I know is that we should avoid Murdock Hill, since all the annoying
+ kids sled there.
+ Don't let me beat you at sled races again (even if I did cheat before)!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Ice Skating Night
 \end_layout
 
+\begin_layout shapepar
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+1in
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{1.55}
+\end_layout
+
+\begin_layout Plain Layout
+
+{0}b{0}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{0}t{0}{2.361}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{.2}t{0}{2.361}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{0.382}t{0.139}{2}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{0.844}t{0.261}{1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{1.002}t{0.3}{1.2}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{1.1}t{0.3}{1.2}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{1.1}e{1.2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+We can see ice skaters out our back door every winter.
+ I think we should make the trek across the bridge and get out there! If
+ you're afraid of your ankles, we can tape them up; if you're afraid of
+ falling we can just be hanging all over each other all night!
+\end_layout
+
 \begin_layout Standard
-We live hardly half a mile from an ice skating rink, we really have to go
- ice skating! I know you're afraid you might hurt your ankles, but if you
- want to, you can hold close to me the whole night!
+\begin_inset Newpage clearpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -747,14 +1080,57 @@ Just like when we'd go on campus and streak or something, mischeif always
  You know we'd destroy them! We'd be actual partners in crime then!
 \end_layout
 
-\begin_layout Subsection
-Sled Slayter Hill Night
+\begin_layout Standard
+Everybody needs to have a name, number, and rank when going on military
+ expeditions.
+ Below are those ranks, and even some medals that can be given out for uncommon
+ valor!
 \end_layout
 
 \begin_layout Standard
-I loved sledding with you, and if the weather cooperates over winter break,
- we should go sledding on Slayter Hill when the students are gone.
- Don't let me beat you at sledding again!
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename purple_heart.svg
+	width 1in
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename medal_of_honor.svg
+	width 1.8in
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -2221,128 +2597,15 @@ status open
 
 \end_layout
 
-\begin_layout Section
-Eat!, the sequel
-\end_layout
-
 \begin_layout Standard
-This one's also really simple! Turn to Appendix 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "sec:Restaurant-Passport"
-
-\end_inset
-
- and follow the directions to finish the game of bingo!
-\end_layout
-
-\begin_layout Section
-Eat! III
-\end_layout
-
-\begin_layout Standard
-I'm misleading you, all of the Eat's are simple! Chocolate is supposedly
- really good for you to feel better in the winter, so we're going on a strict
- regimen!
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Graphics
-	filename dark_chocolate.jpg
-	width 1in
-
-\end_inset
-
-
-\begin_inset space \enskip{}
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-parbox{0.5
-\backslash
-textwidth}{
-\end_layout
-
-\end_inset
-
-Take 2 pieces (1 oz.), by mouth, of chocolate once per day to feel startling
- positive effects.
- Recommended to take after returning home from work, and at least half hour
- before consuming any dairy products.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\start_of_appendix
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-chaptername}{Appendix}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Chapter
-Reference and Ideas
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
+\begin_inset Newpage clearpage
 \end_inset
 
 
 \end_layout
 
 \begin_layout Section
-Restaurant Passport
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Restaurant-Passport"
-
-\end_inset
-
-
+Eat!, the sequel
 \end_layout
 
 \begin_layout Standard
@@ -2997,6 +3260,100 @@ end{tikzpicture}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Eat! III
+\end_layout
+
+\begin_layout Standard
+I'm misleading you, all of the Eat's are simple! Chocolate is supposedly
+ really good for you to feel better in the winter, so we're going on a strict
+ regimen!
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename dark_chocolate.jpg
+	width 1in
+
+\end_inset
+
+
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{0.5
+\backslash
+textwidth}{
+\end_layout
+
+\end_inset
+
+Take 2 pieces (1 oz.), by mouth, of chocolate once per day to feel startling
+ positive effects.
+ Recommended to take after returning home from work, and at least half hour
+ before consuming any dairy products.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\start_of_appendix
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+chaptername}{Appendix}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Reference and Ideas
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -3011,77 +3368,6 @@ Winter Walk Companion
 In the white space below, trace or freehand a view from one of your snow
  hikes, and color it in with crayons.
  This is best done with hot chocolate/tea!
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Snowball Ambush Paraphrenalia
-\end_layout
-
-\begin_layout Standard
-Everybody needs to have a name, number, and rank when going on military
- expeditions.
- Below are those ranks, and even some medals that can be given out for uncommon
- valor!
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="1" columns="2">
-<features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename purple_heart.svg
-	width 1in
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename medal_of_honor.svg
-	width 1.8in
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
 \end_layout
 
 \end_body
