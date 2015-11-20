@@ -293,7 +293,7 @@
   contents = {}
 }
 \end_preamble
-\options 9pt,twoside,openleft
+\options 9pt,twoside,openany
 \use_default_options false
 \begin_modules
 shapepar
