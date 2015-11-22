@@ -260,7 +260,7 @@
 
 \AtBeginDocument{\globalcolor{blue}}
 
-\usepackage[scale=1,angle=0,opacity=0.2,color=white]{background}
+\usepackage[scale=1,angle=0,opacity=0.5,color=white]{background}
 \usetikzlibrary{calc}
 \usepackage{xifthen}
 \usepackage{lipsum}
@@ -293,7 +293,7 @@
   contents = {}
 }
 \end_preamble
-\options 9pt,twoside,openany
+\options 9pt,twoside,openright
 \use_default_options false
 \begin_modules
 shapepar
@@ -576,6 +576,34 @@ We both love summer so much, it's only appropriate that we mourn its passing
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+multipagetikzbackground{1}{
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+input{in_memoriam_illustration.tex}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -722,10 +750,42 @@ Spring Fling Night
 We'd have to do this early in the winter, so it doesn't encroach on spring
  too much, but having root beer floats and spritzing the house to smell
  like flowers would definitely remind us of spring.
+\begin_inset Newpage clearpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 Drive-in Night
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+multipagetikzbackground{1}{
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+input{drive_in_movie.tex}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -744,7 +804,7 @@ cars
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage clearpage
+\begin_inset Newpage cleardoublepage
 \end_inset
 
 
@@ -1073,6 +1133,34 @@ Snowball Ambush Night
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+multipagetikzbackground{2}{
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+input{snow_ball_ambush.tex}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Just like when we'd go on campus and streak or something, mischeif always
  gets your blood turning.
  I think we should bundle up one night and appear at someone's house (Tony
@@ -1088,46 +1176,22 @@ Everybody needs to have a name, number, and rank when going on military
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="1" columns="2">
-<features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 \begin_inset Graphics
-	filename purple_heart.svg
-	width 1in
+	filename medals.svg
+	width 100text%
 
 \end_inset
 
 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename medal_of_honor.svg
-	width 1.8in
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -3257,6 +3321,13 @@ end{tikzpicture}
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
 \end_inset
 
 
