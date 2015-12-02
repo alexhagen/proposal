@@ -260,7 +260,7 @@
 
 \AtBeginDocument{\globalcolor{blue}}
 
-\usepackage[scale=1,angle=0,opacity=0.5,color=white]{background}
+\usepackage[scale=1,angle=0,opacity=1.0,color=white]{background}
 \usetikzlibrary{calc}
 \usepackage{xifthen}
 \usepackage{lipsum}
@@ -566,197 +566,21 @@ I've put some ideas down, and they could be done in any order.
  (winter), and Cabin Fever (fighting) nights.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-In Memoriam
-\end_layout
-
-\begin_layout Standard
-We both love summer so much, it's only appropriate that we mourn its passing
- by trying to recreate it as much as possible.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-multipagetikzbackground{1}{
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-input{in_memoriam_illustration.tex}
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Caribbean Night
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace vfill
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-The steel drum music plays,
-\begin_inset Newline newline
-\end_inset
-
-at the place where the ocean lays
-\begin_inset Newline newline
-\end_inset
-
-up to the rocks and sand
-\end_layout
-
-\begin_layout Standard
-\noindent
-\begin_inset space ~
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-We can relax with the temperature hot,
-\begin_inset Newline newline
-\end_inset
-
-and our fruit juice mixed with a shot,
-\begin_inset Newline newline
-\end_inset
-
-of rum or the strongest thing at hand
-\end_layout
-
-\begin_layout Standard
-\noindent
-\begin_inset space ~
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-It would be easy to look out of place,
-\begin_inset Newline newline
-\end_inset
-
-Especially because we're not of the caribbean race,
-\begin_inset Newline newline
-\end_inset
-
-unless we wore a hawaiian shirt
-\end_layout
-
-\begin_layout Standard
-\noindent
-\begin_inset space ~
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-It's understandable if you'd like to imagine tropical ports
-\begin_inset Newline newline
-\end_inset
-
-Instead in your tropical shorts,
-\begin_inset Newline newline
-\end_inset
-
-But we'll definitely have to give Newton a hula skirt!
-\end_layout
-
-\begin_layout Standard
-\noindent
-\align right
-
-\shape italic
-\size footnotesize
-⇝ Alex Hagen
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace vfill
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-\align center
-\begin_inset Graphics
-	filename caribbean_tiles.svg
-	height 100theight%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Mexican Night
-\end_layout
-
-\begin_layout Standard
-We love tacos, and we certainly like tequila.
- And there's nothing to say that we can't turn on some Gloria Estefan and
- jam out while playing Bean Race!
-\end_layout
-
-\begin_layout Subsection
-Spring Fling Night
-\end_layout
-
-\begin_layout Standard
-We'd have to do this early in the winter, so it doesn't encroach on spring
- too much, but having root beer floats and spritzing the house to smell
- like flowers would definitely remind us of spring.
-\begin_inset Newpage clearpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
 Drive-in Night
 \end_layout
 
@@ -804,21 +628,41 @@ cars
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage cleardoublepage
+\begin_inset Newpage newpage
 \end_inset
 
 
 \end_layout
 
 \begin_layout Section
-Embrace
+Plan Summer Hike Night
 \end_layout
 
 \begin_layout Standard
-Sometimes you can't keep fighting off the cold and hoping you were somewhere
- else, so you have to really embrace winter.
- There are plenty of things you can't do without the winter weather, and
- we should do them!
+I think we're both more happy when we get outside and hike together.
+ But we've definitely explored the Lafayette area about as much as we can,
+ so we need to broaden our horizon a little bit.
+ Try to fill in the below circles with places to go in each of the categories.
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+input{hiking_plan.tex}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -828,7 +672,7 @@ Sometimes you can't keep fighting off the cold and hoping you were somewhere
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Sled Slayter Hill Night
 \end_layout
 
@@ -1003,7 +847,7 @@ One of my favorite memories is when you got a snow day at Area IV and we
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Ice Skating Night
 \end_layout
 
@@ -1128,7 +972,7 @@ We can see ice skaters out our back door every winter.
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Snowball Ambush Night
 \end_layout
 
@@ -1197,80 +1041,14 @@ Everybody needs to have a name, number, and rank when going on military
 
 \end_layout
 
-\begin_layout Subsection
-Coffee or Fireplace Date Night
-\end_layout
-
 \begin_layout Standard
-Finally, we have to try the little coffee places around us.
- That Fuel place down main street seems like it'd be fun.
- Ideally, we could find some place that has a fireplace and sit beside it,
- as close as we can.
+\begin_inset Newpage clearpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-Cabin Fever
-\end_layout
-
-\begin_layout Standard
-When you reach the end of your rope as far as winter weather is concerned,
- you have to just bundle up, make warm drinks, and do something wonderful
- inside.
- We're both really imaginative, and so I think one of the best ways to pass
- the time would be to plan things that we'll do next summer.
-\end_layout
-
-\begin_layout Subsection
-Make Crafts and Decorations Night
-\end_layout
-
-\begin_layout Standard
-Especially since Quals have made the past couple years so difficult, I want
- to go all out on holiday decorations.
- What better way to get in the spirit than to drink tea or cocoa and make
- homemade decorations (and other crafts).
-\begin_inset Newpage clearpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Plan Summer Hike Night
-\end_layout
-
-\begin_layout Standard
-I think we're both more happy when we get outside and hike together.
- But we've definitely explored the Lafayette area about as much as we can,
- so we need to broaden our horizon a little bit.
- Try to fill in the below circles with places to go in each of the categories.
-\begin_inset VSpace vfill
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-input{hiking_plan.tex}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newpage clearpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
 Plan Summer Vacation Night
 \end_layout
 
@@ -1629,8 +1407,8 @@ Train, Hike, and Kayak
 
 \end_layout
 
-\begin_layout Subsection
-Plan John Muir Trail Night
+\begin_layout Section
+Trail By Section Planning Night
 \end_layout
 
 \begin_layout Standard
@@ -1639,7 +1417,7 @@ status open
 
 \begin_layout Plain Layout
 
-
+%
 \backslash
 twopagepicture{b}{p}{john_muir_trail_plan.pgf}{John Muir Trail Elevation}{g}
 \end_layout
@@ -1650,14 +1428,38 @@ twopagepicture{b}{p}{john_muir_trail_plan.pgf}{John Muir Trail Elevation}{g}
 \end_layout
 
 \begin_layout Standard
-Even longer ranging in time than the summer vacation is a plan to do one
- of the through trails by sections, maybe the John Muir Trail.
- Below is a map showing someone's day splitup and a separate split for the
- elevation, which could be a starting place for our plans!
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+multipagetikzbackground{2}{
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+input{long_trails_map.tex}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Also, this national geographic essay about it is really good:
+I really like the idea you have about trying to do a through hiking trail
+ by sections over the next couple years.
+ A fun night would be to sit in and plan which one of the many trails we
+ could try, look up pictures, and plan out how far we'd go each year!
 \end_layout
 
 \begin_layout Standard
@@ -1684,34 +1486,18 @@ textsc{John Muir}}
 \end_layout
 
 \begin_layout Standard
-Drawing wild-eyed wanderers and scruffy-haired men from around the world,
- the 211-mile John Muir Trail has a reputation of immeasurable proportions.
- Making its way onto the proverbial bucket list of nearly every serious
- outdoorsman, it is not only a showcase of the sheer perfection that the
- natural world can attain but highlights some of the best wilderness in
- the United States.
-\end_layout
+\begin_inset Newpage newpage
+\end_inset
 
-\begin_layout Standard
-The trail has become an incredibly popular destination in recent years with
- the permit office in Yosemite National Park reporting a record number of
- applications for 2013.
- For those who fail to draw a permit, or for the individual who lacks enough
- foresight into their schedules to apply in advance, there is still hope;
- a limited number of permits are available the day before a departure date.
-\end_layout
 
-\begin_layout Standard
-...
-\end_layout
+\begin_inset space ~
+\end_inset
 
-\begin_layout Standard
-By the time I reach Tuolumne Meadows, mile 27 and the third day of the trip,
- I have mumbled nearly every unmentionable word in the English language.
- Hordes of tourists and gas guzzling motor homes dominate Tuolumne, with
- backpackers grabbing a burger or ice cream and other supplies before quickly
- escaping back into the wild.
- I follow suit.
+
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1722,7 +1508,19 @@ status open
 
 
 \backslash
-twopagepicture{t}{p}{jmt.jpg}{John Muir Trail Magazine Inset}{n}
+multipagetikzbackground{2}{
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+input{john_muir_trail.tex}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
 \end_layout
 
 \end_inset
@@ -1730,160 +1528,250 @@ twopagepicture{t}{p}{jmt.jpg}{John Muir Trail Magazine Inset}{n}
 
 \end_layout
 
-\begin_layout Standard
-Things change rather quickly as the crowds suddenly vanish and the hills
- rise to unimaginable heights.
- Both the trail and those who walk upon it become increasingly wild with
- every mile.
- It becomes a social experiment as people from all walks of life are thrown
- together in the wilderness on the same trail.
- Some are running away from their woes, many are on a meticulously planned
- dream trip, while others are simply killing time (again I fall in the latter
- category).
- I soon cross paths with a Frenchman named Pascal heading northbound with
- two mules, taking the scenic route to Puerto Montt, near the southern tip
- of Chile.
- It’s an unfathomable 14,000 miles away.
- I shake the man’s hand in wonder, and for the next two days I contemplate
- the sheer immensity of his journey.
-\end_layout
+\begin_layout shapepar
+\begin_inset Argument 2
+status open
 
-\begin_layout Standard
-...
-\end_layout
-
-\begin_layout Standard
-Mile 107 marks a huge milestone in the journey as Muir Trail Ranch, commonly
- regarded as the halfway point of the trail, is reached.
- For most people this is the final resupply until Mount Whitney and the
- town of Lone Pine, awaiting your distant arrival some 114 miles away.
- We overload our packs with food and head into the wild once more.
-\end_layout
-
-\begin_layout Standard
-This is truly where the John Muir Trail begins.
- The terrain increases in magnitude and difficulty as the passes become
- bigger than the next and the route consistently hangs above the 10,000-foot
- elevation mark.
-\end_layout
-
-\begin_layout Standard
-We begin to personify each climb, vilifying them like dictators or high
- school teachers or DMV workers.
- This is rather easy considering they all have been named after prominent
- wilderness men of the early 1900s.
- Muir Pass (11,955 feet) comes up first at mile 128 and is patient but rather
- blunt at times.
- Mather Pass (12,080 feet) is an inconsiderate bastard looming over mile
- 150.
- Pinchot Pass (12,100 feet) is a short and stocky bald man at mile 159.
- Glen Pass (11,980 feet) is a cold and quiet stockbroker from Manhattan,
- standing at mile 179.
- Forester Pass (13,200 feet) ends up being all hype and actually quite the
- pleasant conversationalist near mile 187.
-\end_layout
-
-\begin_layout Standard
-By this point we have turned into climbing machines as we breeze past mile
- number 200.
- The reality and realization that we have been walking for nearly three
- weeks finally kicks in as we pitch our final base camp beneath the northern
- shadow of Mount Whitney.
- In attempt to lighten our packs we feast on our remaining food and slowly
- fade away with the setting sun.
-\end_layout
-
-\begin_layout Standard
-I briefly awake from my slumber, startled at first by the sheer magnitude
- of my surroundings.
- The stars seem strangely close on this particular night and the darkness
- deeper than usual.
- For a moment my thoughts seem to come from a child’s wandering mind more
- than my own, convinced that if I reach out my hands far enough then perhaps
- I could touch them, even bring a few of those distant jewels into my arms
- and hold them even closer.
-\end_layout
-
-\begin_layout Standard
-After 19 days my sanity seems to waiver as I begin to understand how all
- those famous poets can write all those beautiful things with seemingly
- effortless grace, such timeless combinations of words that are so infinitely
- relative.
- For when you are surrounded by such an inspiration you simply reflect it
- back onto a piece of paper.
- I can’t help but think of Mr.
- Muir.
- I slowly close my eyes and fade back into the night, the stars still churning
- high above.
-\end_layout
-
-\begin_layout Standard
-We round off the final climb in the morning with ease, floating to Whitney’s
- 14,500-foot summit by 10 a.m.
- Yet somehow it feels rather anti-climatic.
- The hordes of weekend warriors who are surmounting Whitney from the south
- side flood the trail, updating their Facebook statuses, and fiddling on
- their cell phones upon completion.
- The shock and thought of leaving the wilderness suddenly begins to sink
- in.
- After that long in the wild it can be incredibly difficult to leave.
-\end_layout
-
-\begin_layout Standard
-Alas we shuffle down the final 9 miles to the Whitney Portal, drink a beer,
- hitch a ride into the sleepy town of Lone Pine and before long we are off
- the trail; and back to reality.
- I certainly was not ready.
- I don’t think any of us were.
-\end_layout
-
-\begin_layout Standard
-The following day we all say our good-byes and quickly scatter, taking nearly
- every mode of transportation to make it home.
- Some resort to hitch hiking while others unite with their vehicles.
- I opt for the bus, the pinnacle of public transportation, full of mostly
- shady locals but a few JMT hikers are aboard.
- I notice two Korean men in particular who we had camping by nearly every
- day are among the motley crew.
- And though they speak only broken English they don’t need to say a word.
- You can see the same shock and bewilderment in their eyes that the rest
- of us have.
- They get off in Los Angeles and catch a direct flight to Seoul.
- Reality sinks in even deeper, for some more quickly than others.
-\end_layout
-
-\begin_layout Standard
-So where am I going with this story? Nowhere at all really.
- Often it is not about the destination but instead the journey to it and
- the lessons learned along the way.
- Whether your journey is 3 days, 12 hours, and 41 minutes—like the men who
- just set the speed record for the John Muir Trail—or three years—like Pascal’s
- epic timetable—it is entirely irrelevant in my opinion.
- You can learn more in a single moment of inspiration than an entire lifetime
- of contemplation.
- I for one prefer to wander.
-\end_layout
-
-\begin_layout Standard
-- 
-\noun on
-Eric Leifer
-\noun default
- of 
-\emph on
-National Geographic Young Explorers
-\end_layout
-
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
+{1.65}
+\end_layout
+
+\begin_layout Plain Layout
+
+{0}b{0}
+\backslash
 
 \backslash
-FloatBarrier
+
 \end_layout
+
+\begin_layout Plain Layout
+
+{0}t{0}{1.35}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{0.467}t{0}{1.25}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{0.922}t{0}{1.21}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{1.523}t{0}{1.3}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{2.185}t{0}{1.5}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{2.367}t{0}{1.5}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{3.095}t{0}{1.1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{3.095}t{0}{0.5}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{3.095}e{0.5}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Obviously we can figure out which of the long trails to do by section is
+ best, but doesn't the John Muir Trail sound great? Not only does it go
+ through Yosemite and some of the prettiest High Sierra Mountains, it also
+ summits the highest mountain in the continential U.S., Mount Whitney.
+ We should definitely consider it and get our mountaineering in!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Caribbean Night
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+The steel drum music plays,
+\begin_inset Newline newline
+\end_inset
+
+at the place where the ocean lays
+\begin_inset Newline newline
+\end_inset
+
+up to the rocks and sand
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+We can relax with the temperature hot,
+\begin_inset Newline newline
+\end_inset
+
+and our fruit juice mixed with a shot,
+\begin_inset Newline newline
+\end_inset
+
+of rum or the strongest thing at hand
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+It would be easy to look out of place,
+\begin_inset Newline newline
+\end_inset
+
+Especially because we're not of the caribbean race,
+\begin_inset Newline newline
+\end_inset
+
+unless we wore a hawaiian shirt
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+It's understandable if you'd like to imagine tropical ports
+\begin_inset Newline newline
+\end_inset
+
+Instead in your tropical shorts,
+\begin_inset Newline newline
+\end_inset
+
+But we'll definitely have to give Newton a hula skirt!
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align right
+
+\shape italic
+\size footnotesize
+⇝ Alex Hagen
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename caribbean_tiles.svg
+	height 100theight%
 
 \end_inset
 
@@ -1897,6 +1785,48 @@ FloatBarrier
 
 \end_layout
 
+\begin_layout Section
+Coffee or Fireplace Date Night
+\end_layout
+
+\begin_layout Standard
+Finally, we have to try the little coffee places around us.
+ That Fuel place down main street seems like it'd be fun.
+ Ideally, we could find some place that has a fireplace and sit beside it,
+ as close as we can.
+\end_layout
+
+\begin_layout Section
+Make Crafts and Decorations Night
+\end_layout
+
+\begin_layout Standard
+Especially since Quals have made the past couple years so difficult, I want
+ to go all out on holiday decorations.
+ What better way to get in the spirit than to drink tea or cocoa and make
+ homemade decorations (and other crafts).
+\end_layout
+
+\begin_layout Section
+Mexican Night
+\end_layout
+
+\begin_layout Standard
+We love tacos, and we certainly like tequila.
+ And there's nothing to say that we can't turn on some Gloria Estefan and
+ jam out while playing Bean Race!
+\end_layout
+
+\begin_layout Section
+Spring Fling Night
+\end_layout
+
+\begin_layout Standard
+We'd have to do this early in the winter, so it doesn't encroach on spring
+ too much, but having root beer floats and spritzing the house to smell
+ like flowers would definitely remind us of spring.
+\end_layout
+
 \begin_layout Chapter
 Weekly
 \end_layout
@@ -1908,6 +1838,13 @@ The winter is long.
  days.
  To help provide small bright points, I think it would be good to have weekly
  traditions to look forward to, to help stave off the blues and cabin fever.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -2122,6 +2059,41 @@ Shoeing
  Similar to puddle stomping, but more serious! We could find any of the
  prarie like places we would walk normally, and rent snowshoes to make it
  speedier (and more like walking on the moon).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Winter Walk Companion
+\end_layout
+
+\begin_layout Standard
+In the white space below, trace or freehand a view from one of your snow
+ hikes, and color it in with crayons.
+ This is best done with hot chocolate/tea!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -3392,53 +3364,6 @@ status open
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\start_of_appendix
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-chaptername}{Appendix}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Chapter
-Reference and Ideas
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Winter Walk Companion
-\end_layout
-
-\begin_layout Standard
-In the white space below, trace or freehand a view from one of your snow
- hikes, and color it in with crayons.
- This is best done with hot chocolate/tea!
 \end_layout
 
 \end_body
